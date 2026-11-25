@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <h2>Graella Horaris Dissabte</h2> 
     
 <table border="1">
@@ -100,5 +100,94 @@
     </tr>
  </tbody>
 </table>
+
+
+<hr>
+
+
+  <h2>Reportar Incidència Tècnica</h2>
+
+ <form>
+ <p>
+    <label for="hora">Hora afectada per la incidència:</label><br>
+    <select id="hora" name="hora" required>
+        <option value="">-- Seleciona una franja horària --</option>
+        <option value="16:00-17:00">16:00 - 17:00</option>
+        <option value="17:00-18:00">17:00 - 18:00</option>
+        <option value="18:00-19:00">18:00 - 19:00</option>
+        <option value="19:00-20:00">19:00 - 20:00</option>
+        <option value="20:00-21:00">20:00 - 21:00</option>
+        <option value="21:00-22:00">21:00 - 22:00</option>
+        <option value="22:00-23:00">22:00 - 23:00</option>
+        <option value="23:00-00:00">23:00 - 00:00</option>
+        <option value="00:00-01:00">00:00 - 01:00</option>
+        <option value="01:00-02:00">01:00 - 02:00</option>
+    </select>
+ </p>
+
+ <p>
+    <label for="escenari_afectat">Escenari afectat:</label>
+    <select id="escenari_afectat" name="escenari_afectat" required>
+        <option value="">-- Selecciona un Escenari --</option>
+        <option value="Escenari Nord">Escenari Nord</option>
+        <option value="Escenari Sud">Escenari Sud</option>
+    </select>
+ </p>
+ 
+ <p>
+    <label for="artista">Artista que tenia programada l'actuació:</label>
+    <input id="artista" name="artista" type="text" required>
+ </p>
+
+ <p>
+    <label for="escenari_alternatiu">Escenari alternatiu:</label>
+    <select id="escenari_alternatiu" name="escenari_alternatiu" required>
+        <option value="">-- Selecciona l'escenari alternatiu --</option>
+        <option value="carpa_est">Carpa Est</option>
+        <option value="escenari_bosc">Escenari Bosc</option>
+    </select>
+ </p>
+
+ <fieldset>
+    <legend><strong>Element(s) afectat(s):</strong></legend>
+    <input type="checkbox" id="so" name="elements[]" value="So">
+    <label for="so">So</label><br>
+
+    <input type="checkbox" id="iluminacio" name="elements[]" value="Il·luminació">
+    <label for="iluminacio">Il·luminació</label><br>
+
+    <input type="checkbox" id="estructura" name="elements[]" value="Estructura">
+    <label for="estructura">Estructura</label><br>
+
+    <input type="checkbox" id="cablejat" name="elements[]" value="Cablejat">
+    <label for="cablejat">Cablejat</label>
+ </fieldset>
+
+ <p>
+    <label for="tecnic">Tècnic encarregat:</label><br>
+    <input type="text" id="tecnic" name="tecnic" placeholder="Assigna l'incidència a un tècnic" size="35" required>
+ </p>
+
+ <fieldset>
+        <legend><strong>Prioritat:</strong></legend>
+        <input type="radio" id="alta" name="prioritat" value="Alta" required>
+        <label for="alta">Alta</label><br>
+
+        <input type="radio" id="mitjana" name="prioritat" value="Mitjana" required>
+        <label for="mitjana">Mitjana</label><br>
+
+        <input type="radio" id="baixa" name="prioritat" value="Baixa" required>
+        <label for="baixa">Baixa</label>
+ </fieldset>
+
+  <p>
+    <label for="descripcio">Descripció:</label><br>
+    <textarea id="descripcio" name="descripcio" rows="5" cols="60" required></textarea>
+  </p>
+
+  <p>
+    <button type="submit">Registrar Incidència</button>
+  </p>
+ </form>
 </body>
 </html>
