@@ -7,99 +7,117 @@
 </head>
 <body>
 
-    <h2>Graella Horaris Dissabte</h2> 
+ <header>
+    <h1>Graella Horaris Dissabte / Reportar Incidència Tècnica</h1>
+ </header>
+
+  <nav>
+   <ul>
+    <li><a href="DepartamentRRHH_OriolVargas.html">Departament de RRHH</a></li>
+    <li><a href="DepartamentSeguretat_AlexeiLopez.html">Departament de Seguretat</a></li>
+    <li><a href="DepartamentLogistica_SergiGarcia.html">Departament de Logística</a></li>
+    <li><a href="Ticketing_IkerHerraez.html">Atenció al Client / Ticketing</a></li>
+    <li><a href="../index.html">Home</a></li>  
+   </ul>
+  </nav>
+
+<hr>
     
-<table border="1">
- <thead>
-    <tr>
+  <main>
+
+  <h2>Graella Horaris Dissabte</h2> 
+    
+   <table border="3">
+    <thead>
+     <tr>
         <th>Hora</th>
         <th>Escenari Principal</th>
         <th>Artista</th>
         <th>Tècnic encarregat</th>
         <th>Escenari Alternatiu</th>
         <th>Descripció Incidència</th>
-    </tr>
- </thead>
- <tbody>
-    <tr>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
         <td>16:00 - 17:00</td>
         <td>Escenari Nord</td>
         <td rowspan="2">Quevedo</td>
         <td>Marc Vila</td>
         <td>Carpa Est</td>
         <td>Avaria en el sistema principal de so</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>17:00 - 18:00</td>
         <td>Escenari Nord</td>
         <td>Marc Vila</td>
         <td>Carpa Est</td>
         <td>Continuament en la revisió del so.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>18:00 - 19:00</td>
         <td>Escenari Sud</td>
         <td>La Pantera</td>
         <td>Laia Puig</td>
         <td>Escenari Bosc</td>
         <td>Retard en el muntatge d'il·luminació.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>19:00 - 20:00</td>
         <td>Escenari Nord</td>
         <td rowspan="2">Jey One</td>
         <td>Jordi Soler</td>
         <td>Carpa Est</td>
         <td>Fallada elèctrica al quadre d'escenari.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>20:00 - 21:00</td>
         <td>Escenari Nord</td>
         <td>Jordi Soler</td>
         <td>Carpa Est</td>
         <td>Fallada elèctrica.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>21:00 - 22:00</td>
         <td>Escenari Sud</td>
         <td>Lucho RK</td>
         <td>Anna Serra</td>
         <td>Escenari Bosc</td>
         <td>Substitució del generador principal.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>22:00 - 23:00</td>
         <td>Escenari Nord</td>
         <td rowspan="2">Bad Bunny</td>
         <td>Marc Vila</td>
         <td>Carpa Est</td>
         <td>Problema amb les pantalles Led.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>23:00 - 00:00</td>
         <td>Escenari Nord</td>
         <td>Marc Vila</td>
         <td>Carpa Est</td>
         <td>Problemes amb les pantalles LED.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>00:00 - 01:00</td>
         <td>Escenari Sud</td>
         <td>Tokisha</td>
         <td>Laia Puig</td>
         <td>Escenari Bosc</td>
         <td>Problemes amb la llum i amb el so.</td>
-    </tr>
-    <tr>
+     </tr>
+     <tr>
         <td>1:00 - 2:00</td>
         <td>Escenari Nord</td>
         <td>Heroes del Silencio</td>
         <td>Anna Serra</td>
         <td>Carpa Est</td>
         <td>Reubicació per pluja.</td>
-    </tr>
- </tbody>
-</table>
+     </tr>
+    </tbody>
+   </table>
 
 
 <hr>
@@ -107,8 +125,8 @@
 
   <h2>Reportar Incidència Tècnica</h2>
 
- <form>
- <p>
+  <form>
+   <div>
     <label for="hora">Hora afectada per la incidència:</label><br>
     <select id="hora" name="hora" required>
         <option value="">-- Seleciona una franja horària --</option>
@@ -123,32 +141,32 @@
         <option value="00:00-01:00">00:00 - 01:00</option>
         <option value="01:00-02:00">01:00 - 02:00</option>
     </select>
- </p>
+   </div>
 
- <p>
+   <div>
     <label for="escenari_afectat">Escenari afectat:</label>
     <select id="escenari_afectat" name="escenari_afectat" required>
         <option value="">-- Selecciona un Escenari --</option>
         <option value="Escenari Nord">Escenari Nord</option>
         <option value="Escenari Sud">Escenari Sud</option>
     </select>
- </p>
+   </div>
  
- <p>
+   <div>
     <label for="artista">Artista que tenia programada l'actuació:</label>
     <input id="artista" name="artista" type="text" required>
- </p>
+   </div>
 
- <p>
+   <div>
     <label for="escenari_alternatiu">Escenari alternatiu:</label>
     <select id="escenari_alternatiu" name="escenari_alternatiu" required>
         <option value="">-- Selecciona l'escenari alternatiu --</option>
         <option value="carpa_est">Carpa Est</option>
         <option value="escenari_bosc">Escenari Bosc</option>
     </select>
- </p>
+   </div>
 
- <fieldset>
+   <fieldset>
     <legend><strong>Element(s) afectat(s):</strong></legend>
     <input type="checkbox" id="so" name="elements[]" value="So">
     <label for="so">So</label><br>
@@ -161,14 +179,14 @@
 
     <input type="checkbox" id="cablejat" name="elements[]" value="Cablejat">
     <label for="cablejat">Cablejat</label>
- </fieldset>
+   </fieldset>
 
- <p>
+   <div>
     <label for="tecnic">Tècnic encarregat:</label><br>
     <input type="text" id="tecnic" name="tecnic" placeholder="Assigna l'incidència a un tècnic" size="35" required>
- </p>
+   </div>
 
- <fieldset>
+   <fieldset>
         <legend><strong>Prioritat:</strong></legend>
         <input type="radio" id="alta" name="prioritat" value="Alta" required>
         <label for="alta">Alta</label><br>
@@ -178,16 +196,27 @@
 
         <input type="radio" id="baixa" name="prioritat" value="Baixa" required>
         <label for="baixa">Baixa</label>
- </fieldset>
+   </fieldset>
 
-  <p>
+   <div>
     <label for="descripcio">Descripció:</label><br>
     <textarea id="descripcio" name="descripcio" rows="5" cols="60" required></textarea>
-  </p>
+   </div>
 
-  <p>
+   <div>
     <button type="submit">Registrar Incidència</button>
-  </p>
- </form>
+   </div>
+
+  </form>
+
+ </main>
+
+<hr>
+
+ <footer>  
+    <img src="../img/Email.png" alt="StandBy@gmail.com" width="20" height="20" <p>   <strong>StandBy@gmail.com</strong></p> 
+    <img src="../img/Telefono.png" alt="678 12 23 43" width="20" height="20"  <p>   <strong>678 12 23 43</strong></p>
+ </footer>
+
 </body>
 </html>
