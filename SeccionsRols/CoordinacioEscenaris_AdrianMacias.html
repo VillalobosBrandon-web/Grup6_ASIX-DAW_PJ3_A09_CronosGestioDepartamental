@@ -6,10 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
     
     <h2>Graella Horaris Dissabte</h2> 
+=======
+
+ <header>
+    <h1>Graella Horaris Dissabte</h1>
+    <h1>Reportar Incidència Tècnica</h1>
+ </header>
+
+  <nav>
+   <ul>
+    <li><a href="DepartamentLogistica_SergiGarcia.html">Departament de Logística</a></li>
+>>>>>>> e4e522c3e1f2f31edb9cbfa74bf4dcecebca1a62
     
-<table border="1">
+
+   </ul>
+  </nav>
+    <h1>Graella Horaris Dissabte</h1> 
+    
+<table border="3">
  <thead>
     <tr>
         <th>Hora</th>
@@ -105,10 +122,10 @@
 <hr>
 
 
-  <h2>Reportar Incidència Tècnica</h2>
+  <h1>Reportar Incidència Tècnica</h1>
 
  <form>
- <p>
+ <div>
     <label for="hora">Hora afectada per la incidència:</label><br>
     <select id="hora" name="hora" required>
         <option value="">-- Seleciona una franja horària --</option>
@@ -123,30 +140,30 @@
         <option value="00:00-01:00">00:00 - 01:00</option>
         <option value="01:00-02:00">01:00 - 02:00</option>
     </select>
- </p>
+ </div>
 
- <p>
+ <div>
     <label for="escenari_afectat">Escenari afectat:</label>
     <select id="escenari_afectat" name="escenari_afectat" required>
         <option value="">-- Selecciona un Escenari --</option>
         <option value="Escenari Nord">Escenari Nord</option>
         <option value="Escenari Sud">Escenari Sud</option>
     </select>
- </p>
+</div>
  
- <p>
+ <div>
     <label for="artista">Artista que tenia programada l'actuació:</label>
     <input id="artista" name="artista" type="text" required>
- </p>
+ </div>
 
- <p>
+ <div>
     <label for="escenari_alternatiu">Escenari alternatiu:</label>
     <select id="escenari_alternatiu" name="escenari_alternatiu" required>
         <option value="">-- Selecciona l'escenari alternatiu --</option>
         <option value="carpa_est">Carpa Est</option>
         <option value="escenari_bosc">Escenari Bosc</option>
     </select>
- </p>
+</div>
 
  <fieldset>
     <legend><strong>Element(s) afectat(s):</strong></legend>
@@ -163,10 +180,10 @@
     <label for="cablejat">Cablejat</label>
  </fieldset>
 
- <p>
+ <div>
     <label for="tecnic">Tècnic encarregat:</label><br>
     <input type="text" id="tecnic" name="tecnic" placeholder="Assigna l'incidència a un tècnic" size="35" required>
- </p>
+ </div>
 
  <fieldset>
         <legend><strong>Prioritat:</strong></legend>
@@ -180,14 +197,14 @@
         <label for="baixa">Baixa</label>
  </fieldset>
 
-  <p>
+  <div>
     <label for="descripcio">Descripció:</label><br>
     <textarea id="descripcio" name="descripcio" rows="5" cols="60" required></textarea>
-  </p>
+  </div>
 
-  <p>
+  <div>
     <button type="submit">Registrar Incidència</button>
-  </p>
+  </div>
  </form>
 </body>
 </html>
